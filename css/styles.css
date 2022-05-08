@@ -1,0 +1,177 @@
+/*
+Patrick McKee
+CIS215 Midterm Project
+May 04, 2022
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* ---------------------------Style rule for body and image--------------------------- */
+body {
+  background-color: #9477ed;
+}
+
+/* ---------------------------hero image--------------------------- */
+.sticky-hero {
+  display: block;
+  max-width: 100%
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* ---------------------------glow effect for header--------------------------- */
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.glowlogo img{
+    display: inline;
+    float: left;
+    height: 150px;
+    width: 150px;
+}
+
+/* ---------------------------Style rule for header content--------------------------- */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Macondo', cursive;
+  padding: 3%;
+  color: #ffffff
+}
+
+/* ---------------------------Style rules for navigation area--------------------------- */
+nav{
+  background-color: #3c2a69;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  text-align: center
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none
+  font-color: #ffffff
+}
+
+nav li a {
+  display: inline-block;
+  color: #e3eaf8;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/* ---------------------------Style rules for main content--------------------------- */
+main {
+  padding: 2%;
+  font-family: Geneva, Arial, sans-serif;
+  overflow: auto;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+  font-size: 2em;
+}
+
+img {
+  width: 45%;
+  float: left;
+  padding: 1%;
+}
+
+#group /* main, main p, main h3, img */ {
+  width: 45%;
+  float: right;
+}
+
+.external {
+  color: #1d396d;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main li {
+    font-size: 1.25em;
+}
+
+
+.iframeheader {
+    float: left;
+    padding-left: 100px;
+}
+
+.iframe {
+    float: left;
+    padding-left: 140px;
+}
+/* ---------------------------Style rules for footer content--------------------------- */
+
+.siteFooterBar {
+  display: bar;
+  text-align: initial;
+  font-size: 0.85em;
+  background-color: #3c2a69;
+  color: #e3eaf8;
+  padding-top: 0px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 0px;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+ }
+
+.content {
+    display: flex;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: initial;
+    font: font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    width:500px;
+}
+.foot {
+    display: inline;
+    line-height: 25px;
+    text-align: center;
+}
+.content img {
+    max-height: 65px;
+    max-width: 65px;
+    float: left;
+}
